@@ -1,11 +1,11 @@
-package service;
+package org.matteofavretto.service;
 
-import connector.DatabaseConnection;
-import model.GamesList;
+import org.matteofavretto.connector.DatabaseConnection;
+import org.matteofavretto.model.GamesList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
-import constants.Queries;
+import org.matteofavretto.constants.Queries;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,8 +25,8 @@ public class GamesListService {
             Connection connection = databaseConnection.connect();
             String query =  Queries.CREATE_EMPTY_LIST;
             PreparedStatement statement = connection.prepareStatement(query);
-            statement.setString(0, newList.getListTitle());
-            statement.setString(1, newList.getListDescription());
+            statement.setString(0, newList.getTitle());
+            statement.setString(1, newList.getDescription());
             updatedRows = statement.executeUpdate();
             statement.close();
             connection.close();

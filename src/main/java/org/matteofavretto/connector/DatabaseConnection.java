@@ -1,4 +1,4 @@
-package connector;
+package org.matteofavretto.connector;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

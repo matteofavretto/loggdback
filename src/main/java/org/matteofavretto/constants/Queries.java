@@ -1,4 +1,4 @@
-package constants;
+package org.matteofavretto.constants;
 
 public class Queries {
 

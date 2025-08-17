@@ -1,4 +1,4 @@
-package model;
+package org.matteofavretto.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +9,8 @@ import java.util.List;
 @NoArgsConstructor
 public class GamesList {
 
-    private String listTitle;
-    private String listDescription;
+    private String title;
+    private String description;
     private List<Game> games;
 
 }

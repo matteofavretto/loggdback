@@ -1,4 +1,4 @@
-package model;
+package org.matteofavretto.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -36,5 +36,5 @@ public class Game {
     private Status status;
     private Long score; // Out of 100
     private List<Log> logs;
-    private BufferedImage coverArt;
+    //private BufferedImage coverArt;
 }
